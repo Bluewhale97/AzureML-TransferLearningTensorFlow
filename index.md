@@ -30,11 +30,6 @@ To use transfer learning, we need a base model from which we can use the trained
 base_model = keras.applications.resnet.ResNet50(weights='imagenet', include_top=False, input_shape=(224,224,3))
 print(base_model.summary())
 ```
-
-It took a few seconds:
-
-![image](https://user-images.githubusercontent.com/71245576/115270853-bd251100-a10a-11eb-8301-3f1387beb8e9.png)
-
 Now let's prepare the image data, we need data loaders for color images that are 224x224 pixels in size. 
 
 Define the data generators and list the classes for our images:
